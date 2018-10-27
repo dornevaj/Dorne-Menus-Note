@@ -1,0 +1,92 @@
+﻿@model IEnumerable<Evernote.Entities.Models.Note>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="margin:1% !important;">
+    <div class="pull-left">
+        <h2>Note List</h2>
+    </div>
+    <div class="pull-right">
+        <a type="button" class="btn btn-danger btn-sm" href="~/Note/Create/"><span class="fa fa-plus"></span>&nbsp;New</a>
+    </div>
+</div>
+
+<table class="table table-bordered table-hover table-responsive">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Category.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.User.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Text)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IsDraft)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UpdateUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModifiedDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Category.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.User.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Text)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsDraft)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreateUser)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UpdateUser)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ModifiedDate)
+        </td>
+        <td>
+            @*@Html.ActionLink("Edit", "Edit", new { id=item.NoteId }) |
+        @Html.ActionLink("Details", "Details", new { id=item.NoteId }) |
+        @Html.ActionLink("Delete", "Delete", new { id=item.NoteId })*@
+            <div style="display:flex; flex-direction:row;  flex-wrap:nowrap; justify-content:space-between; align-items:center">
+                <a data-toggle="tooltip" data-placement="top" title="Edit" href="~/Note/Edit/@item.NoteId" type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-edit"></span></a>
+                <a data-toggle="tooltip" data-placement="top" title="Details" href="~/Note/Details/@item.NoteId" type="button" class="btn btn-outline-success btn-sm"><span class="fa fa-info"></span></a>
+                <a data-toggle="tooltip" data-placement="top" title="Delete" href="~/Note/Delete/@item.NoteId" type="button" class="btn btn-outline-danger btn-sm"><span class="fa fa-trash"></span></a>
+            </div>
+        </td>
+    </tr>
+}
+
+</table>

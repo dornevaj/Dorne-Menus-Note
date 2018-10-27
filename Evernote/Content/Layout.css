@@ -1,0 +1,17 @@
+﻿#dvFooterSocialMediaIcons, #dvFooterEmailSubscribe {
+    margin-top: 1%;
+}
+
+#dvFooterMenu > a{
+    color: black;
+    font-size:18px;
+    font-style:normal;
+}
+
+#dvFooterCardRowForCommentAndLike {
+   display:flex;
+   flex-direction:row;
+   flex-wrap:nowrap;
+   justify-content:space-between;
+   flex-flow:row;
+}

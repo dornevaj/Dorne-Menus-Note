@@ -1,0 +1,79 @@
+﻿@model IEnumerable<Evernote.Entities.Models.Category>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div style="margin:1% !important;">
+    <div class="pull-left">
+        <h2>Category List</h2>
+    </div>
+    <div class="pull-right">
+        <a type="button" class="btn btn-danger btn-sm" href="~/Category/Create/"><span class="fa fa-plus"></span>&nbsp;New</a>
+    </div>
+</div>
+
+
+
+<table class="table table-bordered table-hover table-responsive">
+    <thead class="thead-dark">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreateUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UpdateUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CreatedDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ModifiedDate)
+            </th>
+            <th>
+                ...........
+            </th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreateUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UpdateUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CreatedDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ModifiedDate)
+            </td>
+            <td>
+                @*@Html.ActionLink("Edit", "Edit", new { id=item.CategoryId }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.CategoryId }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.CategoryId })*@
+                <div style="display:flex; flex-direction:row;  flex-wrap:nowrap; justify-content:space-between; align-items:center">
+                    <a data-toggle="tooltip" data-placement="top" title="Edit" href="~/Category/Edit/@item.CategoryId" type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-edit"></span></a>
+                    <a data-toggle="tooltip" data-placement="top" title="Details" href="~/Category/Details/@item.CategoryId" type="button" class="btn btn-outline-success btn-sm"><span class="fa fa-info"></span></a>
+                    <a data-toggle="tooltip" data-placement="top" title="Delete" href="~/Category/Delete/@item.CategoryId" type="button" class="btn btn-outline-danger btn-sm"><span class="fa fa-trash"></span></a>
+                </div>
+            </td>
+        </tr>
+    }
+
+</table>

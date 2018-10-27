@@ -1,0 +1,36 @@
+﻿
+@model Exception
+@{
+    ViewBag.Title = "ApplicationOnError";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <br />
+    <div class="clearfix"></div>
+
+    <div class="alert alert-danger">
+        <strong>Error !</strong>
+        <p>@Model.Message</p>
+    </div>
+
+    <div class="alert alert-warning">
+        <strong>Error Details!</strong>
+        <p>@((Model !=null && Model.InnerException !=null) ? ((Model.InnerException.InnerException !=null && Model.InnerException.InnerException.Message !=null) ? (Model.InnerException.InnerException.Message) : (Model.InnerException.Message ?? "")) : ("") )</p>
+    </div>
+
+    <div class="row">
+        <div class="alert alert-info">
+            <p>
+                @Model.StackTrace
+            </p>
+        </div>
+    </div>
+
+    <br />
+    <div class="clearfix"></div>
+</div>
+
+
+
+

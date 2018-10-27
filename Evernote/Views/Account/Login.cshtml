@@ -1,0 +1,50 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- CSS -->
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link  href="~/Content/Account/Login.css" rel="stylesheet" type="text/css" />
+
+    <!--script-->
+    <script src="~/scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/scripts/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <!-- Icon -->
+            <div class="fadeIn first">
+                @*<img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />*@
+                <img src="https://goodlife.green/assets/photos/icon/profile.svg" id="icon" alt="User Icon" />
+            </div>
+            <!-- Login Form -->
+            <form action="~/Account/Login" method="post">
+
+                <input id="login111" class="fadeIn second" placeholder="Enter Your Email" type="email" oninvalid="setCustomValidity('Please Enter A Valid Email Address
+        !')" onchange="try{setCustomValidity('')}catch(e){}" required="" name="EmailAddress" value="Admin@Admin.com">
+                <input type="password" id="password" class="fadeIn third" name="Password" placeholder="password" required="" value="123">
+                <br />
+                <div class="clearfix"></div>
+                <input type="submit" class="fadeIn fourth" value="Log-In">
+                <div>
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                </div>
+            </form>
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <a role="button" class="btn btn-danger pull-left formFooterButtons" href="~/Account/RecoveryPassword">Forgot Password</a>
+                <a role="button" class="btn btn-success pull-right formFooterButtons" href="~/Account/Register">SIGN-UP</a>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
+

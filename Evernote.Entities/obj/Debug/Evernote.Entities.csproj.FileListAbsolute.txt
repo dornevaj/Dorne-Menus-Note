@@ -1,0 +1,14 @@
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.Entities\bin\Debug\Evernote.Entities.dll.config
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.Entities\bin\Debug\Evernote.Entities.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.Entities\bin\Debug\Evernote.Entities.pdb
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.Entities\bin\Debug\EntityFramework.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.Entities\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.Entities\bin\Debug\FakeData.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.Entities\bin\Debug\EntityFramework.xml
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.Entities\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.Entities\bin\Debug\FakeData.pdb
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.Entities\obj\Debug\Evernote.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.Entities\obj\Debug\Evernote.Entities.csproj.CopyComplete
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.Entities\obj\Debug\Evernote.Entities.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.Entities\obj\Debug\Evernote.Entities.pdb
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.Entities\obj\Debug\Evernote.Entities.csprojResolveAssemblyReference.cache

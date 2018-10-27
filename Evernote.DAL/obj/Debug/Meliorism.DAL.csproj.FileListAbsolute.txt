@@ -1,0 +1,17 @@
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\bin\Debug\Evernote.DAL.dll.config
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\bin\Debug\Evernote.DAL.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\bin\Debug\Evernote.DAL.pdb
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\bin\Debug\EntityFramework.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\bin\Debug\Evernote.Entities.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\bin\Debug\FakeData.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\bin\Debug\Evernote.Entities.pdb
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\bin\Debug\Evernote.Entities.dll.config
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\bin\Debug\EntityFramework.xml
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\bin\Debug\FakeData.pdb
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\obj\Debug\Meliorism.DAL.csprojResolveAssemblyReference.cache
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\obj\Debug\Meliorism.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\obj\Debug\Meliorism.DAL.csproj.CopyComplete
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\obj\Debug\Evernote.DAL.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.DAL\obj\Debug\Evernote.DAL.pdb

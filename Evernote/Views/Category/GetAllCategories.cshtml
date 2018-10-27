@@ -1,0 +1,8 @@
+﻿
+<h1 class="my-4">Categories</h1>
+<div class="list-group">
+    @foreach (Evernote.Entities.Models.Category item in ViewBag.GetAllCategoriesForPartialView)
+    {
+        <a href="~/Note/GetNotesByCategory/@item.CategoryId" title="@item.Description" class="list-group-item"><span class="fa fa-caret-right"></span>  @item.Title </a>
+    }
+</div>

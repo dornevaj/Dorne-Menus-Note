@@ -1,0 +1,81 @@
+﻿@model IEnumerable<Evernote.Entities.Models.Comment>
+
+
+<style>
+    .comment-wrapper .panel-body {
+        max-height: 650px;
+        overflow: auto;
+    }
+
+    .comment-wrapper .media-list .media img {
+        width: 64px;
+        height: 64px;
+        border: 2px solid #e5e7e8;
+    }
+
+    .comment-wrapper .media-list .media {
+        border-bottom: 1px dashed #efefef;
+        margin-bottom: 25px;
+    }
+</style>
+
+<ul class="media-list">
+    @foreach (var item in Model)
+    {
+
+        <li class="media">
+            <a href="#" class="pull-left" style="margin-right:10px;">
+                <img src="https://bootdey.com/img/Content/user_1.jpg" alt="" class="img-circle">
+            </a>
+            <div class="media-body">
+                <span class="text-muted pull-right">
+                    <small class="text-muted">@(item.ModifiedDate ?? item.CreatedDate)</small>
+                </span>
+                <strong class="text-success">@(item.User != null ? ((item.User.Name ?? "") + " " + (item.User.SurName ?? "")) : "" )</strong>
+                <br />
+                <div>
+                    @item.Text
+                </div>
+                <br />
+                <div class="col col-sm-1 pull-right">
+                    <div style="display:flex; flex-direction:row;  flex-wrap:nowrap; justify-content:space-between; align-items:center">
+                        <button type="button" class="btn btn-outline-danger btn-sm btnDeleteComment" data-toggle="tooltip" data-placement="top" title="Delete" data-CommentId="@item.CommentId" data-NoteId="@item.NoteId"><span class="fa fa-trash"></span></button>
+                    </div>
+                    <hr /> <br />
+                </div><br /><hr />
+            </div>
+
+        </li>
+    }
+
+</ul>
+
+<script>
+
+    //Delete Comment
+
+
+
+    //Edit Comment
+    $(".btnDeleteComment").click(function () {
+        var CommentId = this.getAttribute("data-commentid");
+        var NoteID = this.getAttribute("data-noteid");
+
+        $.ajax({
+            type: "POST",
+            url: "/Comment/DeleteComment",
+            data: {
+                CommentId: CommentId,
+                NoteID: NoteID
+            }
+        }).done(function (data) {
+            $('#dvComments').html(data);
+        }).fail(function (data) {
+            console.log("Delete Comment Error:", data);
+        });
+    });
+
+
+</script>
+
+

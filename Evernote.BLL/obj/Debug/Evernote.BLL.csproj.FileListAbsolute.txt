@@ -1,0 +1,17 @@
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\bin\Debug\Evernote.BLL.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\bin\Debug\Evernote.BLL.pdb
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\obj\Debug\Evernote.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\obj\Debug\Evernote.BLL.csproj.CoreCompileInputs.cache
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\obj\Debug\Evernote.BLL.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\obj\Debug\Evernote.BLL.pdb
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\bin\Debug\Evernote.DAL.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\bin\Debug\Evernote.Entities.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\bin\Debug\EntityFramework.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\bin\Debug\Evernote.DAL.pdb
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\bin\Debug\Evernote.DAL.dll.config
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\bin\Debug\Evernote.Entities.pdb
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\bin\Debug\Evernote.Entities.dll.config
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\bin\Debug\EntityFramework.xml
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\obj\Debug\Evernote.BLL.csproj.CopyComplete
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\bin\Debug\FakeData.dll
+C:\Users\Mushap.Projen\source\repos\Evernote\Evernote.BLL\bin\Debug\FakeData.pdb
