@@ -9,7 +9,7 @@
  - Login System 
  - Global Filters
  - Logging System with Global Filters
- -Global Exception Handling
+ - Global Exception Handling
  - Dependency Injection With Simple Injector
  - Bootstrap
  - Jquery
