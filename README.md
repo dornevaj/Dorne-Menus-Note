@@ -6,8 +6,10 @@
  - Unit Of Work
  - Generic Repository Pattern
  - Entity Framework Code First
- - Login System
+ - Login System 
  - Global Filters
+ - Logging System with Global Filters
+ -Global Exception Handling
  - Dependency Injection With Simple Injector
  - Bootstrap
  - Jquery
